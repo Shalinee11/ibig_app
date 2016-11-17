@@ -1,13 +1,11 @@
-<% provide(:title, "Home") %>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= yield(:title) %> | Tokio Marine iBig App</title>
-  </head>
-  <body>
-    <h1>TM iBig App</h1>
-    <p>
-      This is the home page. 
-    </p>
-  </body>
-</html>
+<% provide(:title, 'Home') %>
+<div class="center jumbotron">
+  <%= link_to image_tag("logo.png", alt: "TM logo", :size => "150x150") %>
+  <h1>Welcome to</h1>
+  <%= link_to image_tag("ibig_logo.png", alt: "ibig logo", :size => "300x300", :crop => :fill) %>
+  <h2>
+    This is the home page for the Tokio Marine iBig App.
+  </h2>
+
+  <%= link_to "Enter now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
